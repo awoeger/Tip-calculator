@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #043959;
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+.explain {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.calc-bill {
+  background-color: white;
+  padding: 0px 10px;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+input {
+  text-align: center;
+  font-size: 1em;
+}
+
+.submit {
+  margin-top: 20px;
+  font-size: 1.5em;
+  border: 2px solid black;
+  color: white;
+  background-color: #043959;
+  padding: 5px 50px;
+}
+
+h2,
+p {
+  text-align: center;
+}

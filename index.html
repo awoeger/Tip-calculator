@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Wögi's Tip Calculator</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Wögi's Tip Calculator</h1>
+      <p class="explain">Calculate your tip fast and easy</p>
+    </header>
+
+    <main>
+      <div class="calc-bill">
+        <form action="GET">
+          <section>
+            <label for="totalBill">Enter your total bill</label>
+            <input
+              type="number"
+              id="totalBill"
+              name="totalBill"
+              placeholder="Total bill amount"
+              required
+            />
+          </section>
+
+          <section>
+            <label for="rating">How was your service?</label>
+            <input
+              list="rating"
+              name="rating"
+              placeholder="Choose an option"
+              required
+            />
+            <datalist id="rating">
+              <option value="outstanding">30% - It was outstanding</option>
+              <option value="good">20% - It was good</option>
+              <option value="ok">15% - It was okay</option>
+              <option value="bad">10% - It was bad</option>
+              <option value="terrible">5% - It was terrible</option>
+            </datalist>
+          </section>
+
+          <section>
+            <label for="share">How many people are sharing the bill</label>
+            <input
+              type="number"
+              name="share"
+              id="share"
+              placeholder="Number of people"
+              required
+            />
+          </section>
+
+          <section>
+            <button class="submit" type="submit" name="submit">
+              Calculate
+            </button>
+          </section>
+        </form>
+
+        <h2>Tip Amount per Person</h2>
+        <p class="tipAmount">...</p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
